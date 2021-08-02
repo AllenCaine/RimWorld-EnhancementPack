@@ -11,7 +11,7 @@ using Verse.AI;
 
 namespace TD_Enhancement_Pack
 {
-	[HarmonyPatch(typeof(JobGiver_ConfigurableHostilityResponse), "TryGetAttackNearbyEnemyJob")]
+	//[HarmonyPatch(typeof(JobGiver_ConfigurableHostilityResponse), "TryGetAttackNearbyEnemyJob")]
 	public static class NotSoHostile
 	{
 		//JobGiver_ConfigurableHostilityResponse

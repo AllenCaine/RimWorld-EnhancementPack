@@ -21,7 +21,7 @@ namespace TD_Enhancement_Pack
 
 
 	//Flee Enemy Grenades too
-	[HarmonyPatch(typeof(Projectile_Explosive), "Impact")]
+	//[HarmonyPatch(typeof(Projectile_Explosive), "Impact")]
 	public class NotifyEnemiesOfGrenade
 	{
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
