@@ -1,23 +1,20 @@
-Edited Version of alextd's RimWorld-EnhancementPack. 
+# Edited Version of alextd's RimWorld-EnhancementPack. 
 
-I build this updated version for my 1.3 RimWorld playthrough.
-This is a temporary workable version for 1.3 game, not all features work yet. 
+I build this updated version for my 1.3 RimWorld playthrough.  
+This is a temporary workable version for 1.3 game.  
 
-
-All Creadits to Orginal Creator alextd
-
-Orginal 1.2 RimWorld Version:
-Steam : http://steamcommunity.com/sharedfiles/filedetails/?id=1339135272
-GitHub: https://github.com/alextd/RimWorld-EnhancementPack
+All Error on startup are solved and all functions i use work without problems.  
+Please let me know when someone discover problems. -> [Github Issues](https://github.com/AllenCaine/RimWorld-EnhancementPack/issues)  
+When it runs smooth, i can make a pull request to the orginal version, so we have one continued project.   
 
 
 
 
 
+---
+### All Credits to Orginal Creator alextd  
 
-
-Features Not Working:
- - DrawFieldEdgeCorners
- - FleeGrenadeDrafted
- - NotSoHostile
+Orginal alextd 1.2 RimWorld Version:  
+Steam : http://steamcommunity.com/sharedfiles/filedetails/?id=1339135272  
+GitHub: https://github.com/alextd/RimWorld-EnhancementPack  
 
