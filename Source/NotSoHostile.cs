@@ -11,7 +11,7 @@ using Verse.AI;
 
 namespace TD_Enhancement_Pack
 {
-	//[HarmonyPatch(typeof(JobGiver_ConfigurableHostilityResponse), "TryGetAttackNearbyEnemyJob")]
+	[HarmonyPatch(typeof(JobGiver_ConfigurableHostilityResponse), "TryGetAttackNearbyEnemyJob")]
 	public static class NotSoHostile
 	{
 		//JobGiver_ConfigurableHostilityResponse
@@ -32,11 +32,11 @@ namespace TD_Enhancement_Pack
 		}
 
 		//public static IAttackTarget BestAttackTarget(IAttackTargetSearcher searcher, TargetScanFlags flags, Predicate<Thing> validator = null, float minDist = 0, float maxDist = 9999, IntVec3 locus = default(IntVec3), float maxTravelRadiusFromLocus = float.MaxValue, bool canBash = false, bool canTakeTargetsCloserThanEffectiveMinRange = true);
-		public static IAttackTarget BetterAttackTarget(IAttackTargetSearcher searcher, TargetScanFlags flags, Predicate<Thing> validator = null, float minDist = 0f, float maxDist = 9999f, IntVec3 locus = default(IntVec3), float maxTravelRadiusFromLocus = 3.40282347E+38f, bool canBash = false, bool canTakeTargetsCloserThanEffectiveMinRange = true)
+		public static IAttackTarget BetterAttackTarget(IAttackTargetSearcher searcher, TargetScanFlags flags, Predicate<Thing> validator = null, float minDist = 0f, float maxDist = 9999f, IntVec3 locus = default(IntVec3), float maxTravelRadiusFromLocus = 3.40282347E+38f, bool canBash = false, bool canTakeTargetsCloserThanEffectiveMinRange = true, bool canBashFance = false)
 		{
 			return AttackTargetFinder.BestAttackTarget(searcher, flags,
 				Settings.Get().ignoreSleepingEnemies ? ThingIsNotSleeping : validator,  //validator is null for TryGetAttackNearbyEnemyJob, otherwise this is totally broken
-				minDist, maxDist, locus, maxTravelRadiusFromLocus, canBash, canTakeTargetsCloserThanEffectiveMinRange);
+				minDist, maxDist, locus, maxTravelRadiusFromLocus, canBash, canTakeTargetsCloserThanEffectiveMinRange, canBashFance);
 		}
 
 		public static bool ThingIsNotSleeping(Thing t)
