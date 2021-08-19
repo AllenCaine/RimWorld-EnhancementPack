@@ -5,7 +5,7 @@ This is a temporary workable version for 1.3 game.
 
 All Error on startup are solved and all functions i use work without problems.  
 Please let me know when someone discover problems. -> [Github Issues](https://github.com/AllenCaine/RimWorld-EnhancementPack/issues)  
-When it runs smooth, i can make a pull request to the orginal version, so we have one continued project.   
+
 
 
 
