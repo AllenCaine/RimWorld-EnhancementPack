@@ -8,7 +8,9 @@ Please let me know when someone discover problems. -> [Github Issues](https://gi
 
 
 
-
+## When you want to Download this Version of the mod for RimWorld.
+Go to https://github.com/AllenCaine/RimWorld-EnhancementPack/releases
+ 
 
 
 ---
